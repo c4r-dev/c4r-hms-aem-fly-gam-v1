@@ -27,7 +27,6 @@ export default function Home() {
           priority
           src={Raven1}
           alt="Follow us at c4r.io"
-          className="background-image"
         />
       </div>
     </>
