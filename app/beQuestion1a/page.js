@@ -1,11 +1,21 @@
 "use client";
 
+import React, { useState } from "react";
+
 import Image from "next/image";
+
 import CloudLeft from '../assets/text-cloud-1.svg'
 import CloudRight from '../assets/text-cloud-2.svg'
+
 import { useRouter } from "next/navigation";
 
 export default function BEQuestion1a() {
+
+    const [rqtool, setRQTool] = useState("");
+
+    const onValueChange = (event) => {
+        setRQTool(event.target.value);
+    };
 
     const router = useRouter();
 
@@ -16,7 +26,7 @@ export default function BEQuestion1a() {
     };
 
     return (
-        <div className="topic-selection-container">
+        <>
             <div className="activity-header">
                 Flying Game
             </div>
@@ -30,6 +40,7 @@ export default function BEQuestion1a() {
                     attributing credit for the work conducted.
                 </h3>
             </div>
+
 
             <div >
                 <Image
@@ -54,7 +65,7 @@ export default function BEQuestion1a() {
                 </div>
             </form>
 
+        </>
 
-        </div>
     );
 }
