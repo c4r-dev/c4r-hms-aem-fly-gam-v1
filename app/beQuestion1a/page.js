@@ -41,6 +41,22 @@ export default function BEQuestion1a() {
                 </h3>
             </div>
 
+            <div>
+                <CloudLeft />
+                <svg>
+                    <text
+                        x="50%"
+                        y="50%"
+                        dominantBaseline="middle"
+                        textAnchor="middle"
+                        fill="black"
+                        fontSize="24"
+                        fontFamily="Arial"
+                    >
+                        Another Text Here
+                    </text>
+                </svg>
+            </div>
 
             <div >
                 <Image
