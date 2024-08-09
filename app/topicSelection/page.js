@@ -26,7 +26,11 @@ export default function TopicSelection() {
             return;
         }
 
-        router.push(`/startRaven?rqtool=${rqtool}`);
+        if (rqtool === 'be') {
+            router.push('/bioMedEng');
+        }
+
+
 
     };
 
