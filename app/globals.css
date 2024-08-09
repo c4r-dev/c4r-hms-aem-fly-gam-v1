@@ -93,7 +93,7 @@ header {
 .topic-square {
     width: 200px;
     height: 260px;
-    color: white;
+    color: black;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
@@ -113,14 +113,17 @@ header {
     font-size: 1.2em;
 }
 /* Color based on the topic */
-.basic-science-square {
-    background-color: #f031dd;
+.biomedical-engineering-square {
+    background-color: #EBFF00;
 }
-.clinical-science-square {
-    background-color: #3172f0;
+.neuro-science-square {
+    background-color: #5EFF43;
 }
-.public-health-square {
-    background-color: #ff7a00;
+.pharmaceutical-industry-square {
+    background-color: #FF983A;
+}
+.psychology-industry-square {
+    background-color: #FF66F2;
 }
 
 /* Hide the radio button */
@@ -771,4 +774,8 @@ textarea::placeholder {
 
 .suspense-container {
     display: none;
+}
+
+.center-text {
+    text-align: center;
 }

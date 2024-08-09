@@ -33,76 +33,115 @@ export default function TopicSelection() {
     return (
         <div className="topic-selection-container">
             <div className="activity-header">
-                <h1>Formulating a Valid Research Question</h1>
+                Flying Game
+            </div>
+
+            <div>
+                <br></br><br></br>
+                <h1 className="center-text">What research area interest you most?</h1>
             </div>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-3">
 
+                <div className="flex-container">
+                    <input
+                        type="radio"
+                        name="rqtoolanswer"
+                        id="rqtoolbe"
+                        value={"be"}
+                        checked={rqtool === "be"}
+                        onChange={onValueChange}
+                        className="topic-radio-input"
+                    />
+                    <label htmlFor="rqtoolbe">
+                        <div
+                            className={`topic-square biomedical-engineering-square ${rqtool === "be" ? "selected-style" : ""
+                                }`}
+                        >
+                            BIOMEDICAL ENGINEERING
+                            <h5>A team of biomedical engineers is developing
+                                a new medical device for diagnosing a rare
+                                genetic disorder. They conduct a clinical trial
+                                involving patients with the disorder and healthy
+                                controls.
+                            </h5>
 
-            <div className="flex-container">
-                <input
-                    type="radio"
-                    name="rqtoolanswer"
-                    id="rqtoolbs"
-                    value={"bs"}
-                    checked={rqtool === "bs"}
-                    onChange={onValueChange}
-                    className="topic-radio-input"
-                />
-                <label htmlFor="rqtoolbs">
-                    <div
-                        className={`topic-square basic-science-square ${
-                            rqtool === "bs" ? "selected-style" : ""
-                        }`}
-                    >
-                        Basic Science
-                    </div>
-                </label>
+                        </div>
+                    </label>
 
-                <input
-                    type="radio"
-                    name="rqtoolanswer"
-                    id="rqtoolcs"
-                    value={"cs"}
-                    checked={rqtool === "cs"}
-                    onChange={onValueChange}
-                    className="topic-radio-input"
-                />
-                <label htmlFor="rqtoolcs">
-                    <div
-                        className={`topic-square clinical-science-square ${
-                            rqtool === "cs" ? "selected-style" : ""
-                        }`}
-                    >
-                        Clinical Science
-                    </div>
-                </label>
+                    <input
+                        type="radio"
+                        name="rqtoolanswer"
+                        id="rqtoolns"
+                        value={"ns"}
+                        checked={rqtool === "ns"}
+                        onChange={onValueChange}
+                        className="topic-radio-input"
+                    />
+                    <label htmlFor="rqtoolns">
+                        <div
+                            className={`topic-square neuro-science-square ${rqtool === "ns" ? "selected-style" : ""
+                                }`}
+                        >
+                            NEUROSCIENCE INVESTIGATION
+                            <h5>Neuroscientists are investigating the effects
+                                of a new drug on memory consolidation. They conduct
+                                an experiment with human participants.
+                            </h5>
+                        </div>
+                    </label>
 
-                <input
-                    type="radio"
-                    name="rqtoolanswer"
-                    id="rqtoolph"
-                    value={"ph"}
-                    checked={rqtool === "ph"}
-                    onChange={onValueChange}
-                    className="topic-radio-input"
-                />
-                <label htmlFor="rqtoolph">
-                    <div
-                        className={`topic-square public-health-square ${
-                            rqtool === "ph" ? "selected-style" : ""
-                        }`}
-                    >
-                        Public Health
-                    </div>
-                </label>
-            </div>
+                    <input
+                        type="radio"
+                        name="rqtoolanswer"
+                        id="rqtoolpi"
+                        value={"pi"}
+                        checked={rqtool === "pi"}
+                        onChange={onValueChange}
+                        className="topic-radio-input"
+                    />
+                    <label htmlFor="rqtoolpi">
+                        <div
+                            className={`topic-square pharmaceutical-industry-square ${rqtool === "pi" ? "selected-style" : ""
+                                }`}
+                        >
+                            PHARMACEUTICAL INDUSTRY
+                            <h5>A pharmaceutical company is testing a new drug for a
+                                common chronic condition. They conduct a large-scale clinical
+                                trial.
+                            </h5>
+                        </div>
+                    </label>
 
-            <div className="select-topic-button">
-                <button type="submit">CONTINUE</button>
-            </div>
-        </form>
+                    <input
+                        type="radio"
+                        name="rqtoolanswer"
+                        id="rqtoolps"
+                        value={"ps"}
+                        checked={rqtool === "ps"}
+                        onChange={onValueChange}
+                        className="topic-radio-input"
+                    />
+                    <label htmlFor="rqtoolps">
+                        <div
+                            className={`topic-square psychology-industry-square ${rqtool === "ps" ? "selected-style" : ""
+                                }`}
+                        >
+                            PSYCHOLOGY TESTING
+                            <h5>A pharmaceutical company is testing a new drug for a
+                                common chronic condition. They conduct a large-scale clinical
+                                trial.
+                            </h5>
+                        </div>
+                    </label>
+
+                </div>
+
+                <div className="select-topic-button">
+                    <button type="submit">CONTINUE</button>
+                </div>
+            </form>
         </div>
-        
+
     );
 }

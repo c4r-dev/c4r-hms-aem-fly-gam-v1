@@ -16,7 +16,12 @@ export default function Home() {
 
   return (
     <>
-      <div>HOME</div>
+      <div>CONFIRMATION BIAS</div>
+      <div>Flying Game</div>
+      <p>Pick what you decide is the most relevant or useful strategy for
+        each obstacle you face to successfully masking and completing
+        your experiment.
+      </p>
 
       <div className="activity-start-button-footer">
         <button onClick={startActivity}>Start Activity</button>
