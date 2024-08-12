@@ -36,14 +36,11 @@ p {
     font-family: "GeneralSans-Regular", sans-serif;
 }
 
-button {
-    background-color: #000000;
+.button {
     color: #ffffff;
     font-family: "GeneralSans-Regular", sans-serif;
     font-weight: 800;
-    /* font-family: 'GeneralSans-Regular', sans-serif; */
     padding: 10px;
-    border-radius: 4px;
     font-size: 1em;
     border: none;
     cursor: pointer;
@@ -775,5 +772,9 @@ textarea {
 }
 
 .center-text {
+    text-align: center;
+}
+
+.cloud-button {
     text-align: center;
 }

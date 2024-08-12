@@ -11,17 +11,11 @@ import { useRouter } from "next/navigation";
 
 export default function BEQuestion1a() {
 
-    const [rqtool, setRQTool] = useState("");
-
-    const onValueChange = (event) => {
-        setRQTool(event.target.value);
-    };
-
     const router = useRouter();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        router.push('/beQuestion1a');
+        router.push('/');
 
     };
 
@@ -41,31 +35,17 @@ export default function BEQuestion1a() {
                 </h3>
             </div>
 
-            <div>
-                <CloudLeft />
-                <svg>
-                    <text
-                        x="50%"
-                        y="50%"
-                        dominantBaseline="middle"
-                        textAnchor="middle"
-                        fill="black"
-                        fontSize="24"
-                        fontFamily="Arial"
-                    >
-                        Another Text Here
-                    </text>
-                </svg>
-            </div>
-
             <div >
-                <Image
-                    priority={true}
-                    src={CloudLeft}
-                    alt="Follow us at c4r.io"
-                    width={650}
-                    height={650}
-                />
+                <button className="cloud-button">
+                    <Image
+                        priority={true}
+                        src={CloudLeft}
+                        alt="Follow us at c4r.io"
+                        width={650}
+                        height={650}
+                    />
+                </button>
+                <button className="cloud-button">
                 <Image
                     priority={true}
                     src={CloudRight}
@@ -73,6 +53,7 @@ export default function BEQuestion1a() {
                     width={650}
                     height={650}
                 />
+                </button>
             </div>
 
             <form onSubmit={handleSubmit}>
