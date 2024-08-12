@@ -7,8 +7,13 @@
     font-family: "GeneralSans-Semibold";
     src: url("assets/GeneralSans-Regular.ttf") format("truetype");
 }
+@font-face {
+    font-family: "JetBrains-Mono";
+    src: url("assets/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+}
+
 * {
-    font-family: "GeneralSans-Semibold", sans-serif;
+    font-family: "GeneralSans-Semibold", sans-serif, "JetBrains-Mono";
 }
 
 body {
@@ -777,4 +782,11 @@ textarea {
 
 .cloud-button {
     text-align: center;
+}
+
+.question-header {
+    font-family: 'JetBrains-Mono';
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
 }

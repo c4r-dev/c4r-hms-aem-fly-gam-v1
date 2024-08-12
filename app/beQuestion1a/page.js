@@ -25,14 +25,17 @@ export default function BEQuestion1a() {
                 Flying Game
             </div>
 
-            <div className="center-text">
+            <div>
                 <br></br><br></br>
-                <h1>OWNERSHIP ISSUES</h1>
-                <h3>The lead principal investigator (PI) believes that if other
+                <div className="question-header">
+                    OWNERSHIP ISSUES
+                </div>
+                <br></br><br></br>
+                <div style={{ fontSize: 18, fontFamily: 'GeneralSands-Semibold', fontWeight: 600 }}>The lead principal investigator (PI) believes that if other
                     researchers contribute to the experiment, it will lead to
                     ownership or authorship issues. They worry about difficulties in
                     attributing credit for the work conducted.
-                </h3>
+                </div>
             </div>
 
             <div >
@@ -45,15 +48,15 @@ export default function BEQuestion1a() {
                         height={650}
                     />
                 </button>
-        
+
                 <button className="cloud-button">
-                <Image
-                    priority={true}
-                    src={CloudRight}
-                    alt="Follow us at c4r.io"
-                    width={650}
-                    height={650}
-                />
+                    <Image
+                        priority={true}
+                        src={CloudRight}
+                        alt="Follow us at c4r.io"
+                        width={650}
+                        height={650}
+                    />
                 </button>
             </div>
 
