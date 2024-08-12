@@ -4,8 +4,8 @@ import React, { useState } from "react";
 
 import Image from "next/image";
 
-import CloudLeft from '../assets/text-cloud-1.svg'
-import CloudRight from '../assets/text-cloud-2.svg'
+import CloudLeft from '../assets/bequestion1a-left.svg'
+import CloudRight from '../assets/bequestion1a-right.svg'
 
 import { useRouter } from "next/navigation";
 
@@ -45,6 +45,7 @@ export default function BEQuestion1a() {
                         height={650}
                     />
                 </button>
+        
                 <button className="cloud-button">
                 <Image
                     priority={true}
