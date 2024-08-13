@@ -13,10 +13,14 @@ export default function BEQuestion1a() {
 
     const router = useRouter();
 
-    const handleSubmit = async (e) => {
+    const onClickCA1 = async (e) => {
         e.preventDefault();
-        router.push('/');
+        router.push('/beQuestion1aCA1');
+    };
 
+    const onClickSC1 = async (e) => {
+        e.preventDefault();
+        router.push('/beQuestion1aCA1');
     };
 
     return (
@@ -39,7 +43,7 @@ export default function BEQuestion1a() {
             </div>
 
             <div >
-                <button className="cloud-button">
+                <button className="cloud-button" onClick={onClickCA1}>
                     <Image
                         priority={true}
                         src={CloudLeft}
@@ -49,7 +53,7 @@ export default function BEQuestion1a() {
                     />
                 </button>
 
-                <button className="cloud-button">
+                <button className="cloud-button" onClick={onClickSC1}>
                     <Image
                         priority={true}
                         src={CloudRight}
@@ -59,13 +63,6 @@ export default function BEQuestion1a() {
                     />
                 </button>
             </div>
-
-            <form onSubmit={handleSubmit}>
-                <div className="select-topic-button">
-                    <button type="submit">CONTINUE</button>
-                </div>
-            </form>
-
         </>
 
     );

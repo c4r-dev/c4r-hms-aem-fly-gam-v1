@@ -1,5 +1,9 @@
 "use client";
 
+import Image from "next/image";
+
+import Raven1 from "../assets/raven-1-clouds-2.svg";
+
 import { useRouter } from "next/navigation";
 
 export default function BEQuestion1() {
@@ -21,19 +25,25 @@ export default function BEQuestion1() {
             <div className="center-text">
                 <br></br><br></br>
                 <h1>OWNERSHIP ISSUES</h1>
-                <h3>The lead principal investigator (PI) believes that if other 
-                    researchers contribute to the experiment, it will lead to 
-                    ownership or authorship issues. They worry about difficulties in 
+                <h3>The lead principal investigator (PI) believes that if other
+                    researchers contribute to the experiment, it will lead to
+                    ownership or authorship issues. They worry about difficulties in
                     attributing credit for the work conducted.
                 </h3>
             </div>
-           
+
             <form onSubmit={handleSubmit}>
                 <div className="select-topic-button">
                     <button type="submit">CONTINUE</button>
                 </div>
             </form>
-
+            <div>
+                <Image
+                    priority
+                    src={Raven1}
+                    alt="Follow us at c4r.io"
+                />
+            </div>
 
         </div>
     );

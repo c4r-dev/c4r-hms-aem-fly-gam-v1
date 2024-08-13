@@ -4,7 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 
 import Image from "next/image";
-import Raven1 from './assets/raven-1.svg';
+import Raven1 from './assets/raven-1-clouds-1.svg';
 
 export default function Home() {
 

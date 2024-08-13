@@ -1,5 +1,9 @@
 "use client";
 
+import Image from "next/image";
+
+import Raven1 from "../assets/raven-1-clouds-2.svg";
+
 import { useRouter } from "next/navigation";
 
 export default function BioMedEng() {
@@ -28,14 +32,20 @@ export default function BioMedEng() {
                     controls.
                 </h3>
             </div>
-           
+
             <form onSubmit={handleSubmit}>
                 <div className="select-topic-button">
                     <button type="submit">START FLYING</button>
                 </div>
             </form>
 
-
+            <div>
+                <Image
+                    priority
+                    src={Raven1}
+                    alt="Follow us at c4r.io"
+                />
+            </div>
         </div>
     );
 }

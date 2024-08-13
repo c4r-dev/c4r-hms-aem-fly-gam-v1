@@ -5,9 +5,7 @@ import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 
-import Raven1 from "../assets/feedback-button-1.svg";
-import Raven2 from "../assets/feedback-button-2.svg";
-import Raven3 from "../assets/feedback-button-3.svg";
+import Raven1 from "../assets/raven-1-clouds-2.svg";
 
 export default function TopicSelection() {
     const router = useRouter();
@@ -18,21 +16,10 @@ export default function TopicSelection() {
         setRQTool(event.target.value);
     };
 
-    const handleSubmit = async (e) => {
+    const onClickBE = async (e) => {
         e.preventDefault();
-
-        if (!rqtool) {
-            alert("Selection is required to Continue.");
-            return;
-        }
-
-        if (rqtool === 'be') {
-            router.push('/bioMedEng');
-        }
-
-
-
-    };
+        router.push('/bioMedEng');
+    }
 
     return (
         <div className="topic-selection-container">
@@ -45,9 +32,10 @@ export default function TopicSelection() {
                 <h1 className="center-text">What research area interest you most?</h1>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3">
 
                 <div className="flex-container">
+
                     <input
                         type="radio"
                         name="rqtoolanswer"
@@ -58,20 +46,24 @@ export default function TopicSelection() {
                         className="topic-radio-input"
                     />
                     <label htmlFor="rqtoolbe">
-                        <div
-                            className={`topic-square biomedical-engineering-square ${rqtool === "be" ? "selected-style" : ""
-                                }`}
-                        >
-                            BIOMEDICAL ENGINEERING
-                            <h5>A team of biomedical engineers is developing
-                                a new medical device for diagnosing a rare
-                                genetic disorder. They conduct a clinical trial
-                                involving patients with the disorder and healthy
-                                controls.
-                            </h5>
+                        <button onClick={onClickBE}>
+                            <div
+                                className={`topic-square biomedical-engineering-square ${rqtool === "be" ? "selected-style" : ""
+                                    }`}
+                            >
+                                BIOMEDICAL ENGINEERING
+                                <h5>A team of biomedical engineers is developing
+                                    a new medical device for diagnosing a rare
+                                    genetic disorder. They conduct a clinical trial
+                                    involving patients with the disorder and healthy
+                                    controls.
+                                </h5>
 
-                        </div>
+                            </div>
+
+                        </button>
                     </label>
+
 
                     <input
                         type="radio"
@@ -141,10 +133,19 @@ export default function TopicSelection() {
 
                 </div>
 
-                <div className="select-topic-button">
+                {/* <div className="select-topic-button">
                     <button type="submit">CONTINUE</button>
+                </div> */}
+
+                <div>
+                    <Image
+                        priority
+                        src={Raven1}
+                        alt="Follow us at c4r.io"
+                    />
                 </div>
-            </form>
+
+            </div>
         </div>
 
     );
