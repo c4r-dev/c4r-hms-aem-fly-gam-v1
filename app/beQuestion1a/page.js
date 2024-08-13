@@ -15,12 +15,12 @@ export default function BEQuestion1a() {
 
     const onClickCA1 = async (e) => {
         e.preventDefault();
-        router.push('/beQuestion1aCA1');
+        router.push('/beQuestion2');
     };
 
     const onClickSC1 = async (e) => {
         e.preventDefault();
-        router.push('/beQuestion1aCA1');
+        router.push('/beQuestion2');
     };
 
     return (
